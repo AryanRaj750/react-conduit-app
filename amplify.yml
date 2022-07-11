@@ -7,7 +7,7 @@ frontend:
     build:
       commands:
         - echo $ROOT_API
-        - sed -i 's,https://conduit.productionready.io/api/,`echo $ROOT_API`,g' agent.js
+        - sed -i 's,https://conduit.productionready.io/api/,$ROOT_API,g' agent.js
         - npm run build
   artifacts:
     # IMPORTANT - Please verify your build output directory
