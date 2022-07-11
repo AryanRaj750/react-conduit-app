@@ -3,7 +3,7 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = 'http://aryan-alb-1714603034.us-east-2.elb.amazonaws.com/';
+const API_ROOT = 'http://aryan-alb-1714603034.us-east-2.elb.amazonaws.com/api';
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
